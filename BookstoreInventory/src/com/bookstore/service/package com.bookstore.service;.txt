@@ -1,0 +1,14 @@
+package com.bookstore.service;
+
+import com.bookstore.dao.UserDAO;
+import com.bookstore.model.User;
+
+public class AuthService {
+    public static User login(String username, String password) {
+        User user = UserDAO.getUserByUsername(username);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
+    }
+}
