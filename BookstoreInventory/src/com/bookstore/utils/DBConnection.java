@@ -8,7 +8,7 @@ public class DBConnection {
 
     private static final String URL = "jdbc:mysql://localhost:3306/bookstore";
     private static final String USER = "root";  // Change if needed
-    private static final String PASS = "admin"; // Change to your MySQL password
+    private static final String PASS = "pass123"; // Change to your MySQL password
 
     public static Connection getConnection() {
         try {
